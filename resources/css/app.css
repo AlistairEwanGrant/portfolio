@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.title-name-front-page {
+    font-family: Montserrat, sans-serif;
+    font-size: 4rem;
+    line-height: 3.5rem;
+}
+
+.front-page-image {
+    width: 15rem;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+.front-page-divider-custom {
+    margin: 1.25rem 0 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.front-page-strip{
+    width: 100%;
+    max-width: 7rem;
+    height: 0.25rem;
+    border-radius: 1rem;
+    border-color: #2c3e50;
+}
+
