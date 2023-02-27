@@ -1,5 +1,7 @@
 <x-app-layout>
-    <!-- Masthead-->
+
+    <x-nav-bar></x-nav-bar>
+
     <div class="py-6 px-4 sm:p-6 md:py-10 md:px-8 bg-cyan-900 text-white text-center py-24">
         <div class="flex items-center flex-col">
             <!-- Masthead Avatar Image-->
@@ -18,5 +20,8 @@
             <p class="mb-0 text-lg ">Full-Stack Web Developer</p>
         </div>
     </div>
+
+    <x-footer></x-footer>
+
 </x-app-layout>
 
