@@ -85,7 +85,7 @@
                      x-transition:leave="transition ease-in duration-300"
                      x-transition:leave-start="opacity-100 transform scale-100"
                      x-transition:leave-end="opacity-0 transform scale-90"
-                     class="absolute right-0 py-1 text-gray-500 bg-white rounded-lg shadow-xl min-w-max">
+                     class="absolute right-0 py-1 text-gray-800 bg-white rounded-lg shadow-xl min-w-max">
                     <a href="#" class="block px-4 py-1 hover:text-gray-900 hover:bg-gray-100">Skills</a>
                     <a href="#" class="block px-4 py-1 hover:text-gray-900 hover:bg-gray-100">Experience</a>
                     <a href="#" class="block px-4 py-1 hover:text-gray-900 hover:bg-gray-100">CV</a>
