@@ -17,4 +17,8 @@ Route::get('/', function () {
     return view('home/welcome');
 });
 
+Route::get('/portfolio', function () {
+    return view('home/portfolio');
+});
+
 require __DIR__.'/auth.php';

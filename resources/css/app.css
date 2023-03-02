@@ -31,3 +31,10 @@
     border-color: #2c3e50;
 }
 
+.portfolio-sizes {
+    max-height: 547px;
+}
+
+.portfolio-div-sizes {
+    max-height: 555px;
+}

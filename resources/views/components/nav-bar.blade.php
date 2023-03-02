@@ -52,7 +52,7 @@
     <div class="hidden w-full lg:flex lg:items-center lg:w-auto">
         <div class="items-center flex-1 pt-6 justify-center text-lg text-white lg:pt-0 list-reset lg:flex">
             <div class="mr-3">
-                <a href="#" class="inline-block px-4 py-2 no-underline hover:text-green-800 text-white">
+                <a href="{{asset('/portfolio')}}" class="inline-block px-4 py-2 no-underline hover:text-green-800 text-white">
                     Portfolio
                 </a>
             </div>

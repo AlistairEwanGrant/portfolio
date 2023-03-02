@@ -17,7 +17,7 @@
                 <div class="bg-white front-page-strip"></div>
             </div>
             <!-- Masthead Subheading-->
-            <p class="mb-0 text-lg ">Full-Stack Web Developer</p>
+            <p class="mb-0 text-lg">Full-Stack Web Developer</p>
         </div>
     </div>
 
