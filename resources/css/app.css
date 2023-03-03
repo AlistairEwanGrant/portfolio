@@ -38,3 +38,8 @@
 .portfolio-div-sizes {
     max-height: 555px;
 }
+
+.modal-fitting {
+    max-height: 70vh;
+    overflow-y: auto;
+}

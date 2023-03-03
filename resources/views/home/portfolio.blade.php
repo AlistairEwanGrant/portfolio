@@ -17,21 +17,36 @@
             <!-- Portfolio Grid Items-->
             <div class="grid gap-x-8 lg:grid lg:grid-cols-3 lg:gap-y-8 lg:mx-auto w-full">
                 <!-- Portfolio Item 3-->
-                <div class="mb-12 mx-6 cursor-pointer border-solid border-2 border-black rounded-lg mx-auto portfolio-div-sizes">
-                    <img class="portfolio-sizes" src="{{URL::asset('images/project3.png')}}" alt=""/>
-                </div>
-                <!-- Portfolio Item 1-->
-                <div class="mb-12 mx-6 cursor-pointer border-solid border-2 border-black rounded-lg mx-auto portfolio-div-sizes">
-                    <img class="portfolio-sizes" src="{{URL::asset('images/project1.jpeg')}}" alt=""/>
-                </div>
-                <!-- Portfolio Item 2-->
-                <div class="mb-12 mx-6 cursor-pointer border-solid border-2 border-black rounded-lg mx-auto portfolio-div-sizes">
-                    <img class="portfolio-sizes" src="{{URL::asset('images/project2.jpg')}}" alt=""/>
-                </div>
+                <div
+                    class="mb-12 mx-6 cursor-pointer border-solid border-2 border-black rounded-lg mx-auto portfolio-div-sizes"
+                    x-data="{ open: false }"
+                    >
+                    <img class="portfolio-sizes"
+                         src="{{URL::asset('images/project3.png')}}"
+                         alt=""
+                         x-on:click="open = ! open"/>
+
+{{--                    Modal for content project 3--}}
+                    <div x-show="open" x-transition x-on:click="open = ! open">
+                        <x-modal></x-modal>
+                    </div>
+
+            </div>
+            <!-- Portfolio Item 1-->
+            <div
+                class="mb-12 mx-6 cursor-pointer border-solid border-2 border-black rounded-lg mx-auto portfolio-div-sizes">
+                <img class="portfolio-sizes" src="{{URL::asset('images/project1.jpeg')}}" alt=""/>
+            </div>
+            <!-- Portfolio Item 2-->
+            <div
+                class="mb-12 mx-6 cursor-pointer border-solid border-2 border-black rounded-lg mx-auto portfolio-div-sizes">
+                <img class="portfolio-sizes" src="{{URL::asset('images/project2.jpg')}}" alt=""/>
             </div>
         </div>
     </div>
     </div>
+
+
 
     <x-footer></x-footer>
 </x-app-layout>
