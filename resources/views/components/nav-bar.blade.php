@@ -34,15 +34,15 @@
     <div x-ref="tab" :style="handleToggle()"
          class="relative w-full overflow-hidden transition-all duration-700 lg:hidden max-h-0">
         <div class="flex flex-col my-3 space-y-2 text-lg hover:font-b text-white">
-            <a href="#" class="hover:text-green-800"><span>Portfolio</span></a>
+            <a href="{{asset('/portfolio')}}" class="hover:text-green-800"><span>Portfolio</span></a>
             <hr>
-            <a href="#" class="hover:text-green-900"><span>Skills</span></a>
+            <a href="{{route("skills")}}" class="hover:text-green-900"><span>Skills</span></a>
             <hr>
-            <a href="#" class="hover:text-green-900"><span>Experience</span></a>
+            <a href="{{route("experience")}}" class="hover:text-green-900"><span>Experience</span></a>
             <hr>
-            <a href="#" class="hover:text-green-900"><span>CV</span></a>
+            <a href="{{route("cv")}}" class="hover:text-green-900"><span>CV</span></a>
             <hr>
-            <a href="#" class="hover:text-green-900"><span>Contact</span></a>
+            <a href="{{route("contact")}}" class="hover:text-green-900"><span>Contact</span></a>
         </div>
     </div>
     <!-- End toggle menu -->
@@ -58,7 +58,7 @@
             </div>
 
             <div class="mr-3">
-                <a href="#" class="inline-block px-4 py-2 no-underline hover:text-green-800 text-white">
+                <a href="{{route('curriculumVitae.index')}}" class="inline-block px-4 py-2 no-underline hover:text-green-800 text-white">
                     Download CV
                 </a>
             </div>
@@ -86,10 +86,10 @@
                      x-transition:leave-start="opacity-100 transform scale-100"
                      x-transition:leave-end="opacity-0 transform scale-90"
                      class="absolute right-0 py-1 text-gray-800 bg-white rounded-lg shadow-xl min-w-max">
-                    <a href="#" class="block px-4 py-1 hover:text-gray-900 hover:bg-gray-100">Skills</a>
-                    <a href="#" class="block px-4 py-1 hover:text-gray-900 hover:bg-gray-100">Experience</a>
-                    <a href="#" class="block px-4 py-1 hover:text-gray-900 hover:bg-gray-100">CV</a>
-                    <a href="#" class="block px-4 py-1 hover:text-gray-900 hover:bg-gray-100">Contact</a>
+                    <a href="{{route("skills")}}" class="block px-4 py-1 hover:text-gray-900 hover:bg-gray-100">Skills</a>
+                    <a href="{{route("experience")}}" class="block px-4 py-1 hover:text-gray-900 hover:bg-gray-100">Experience</a>
+                    <a href="{{route("cv")}}" class="block px-4 py-1 hover:text-gray-900 hover:bg-gray-100">CV</a>
+                    <a href="{{route("contact")}}" class="block px-4 py-1 hover:text-gray-900 hover:bg-gray-100">Contact</a>
                 </div>
                 <!-- End Dropdown Menu -->
             </div>

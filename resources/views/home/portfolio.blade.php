@@ -57,7 +57,6 @@
                          src="{{URL::asset('images/project2.jpg')}}"
                          alt="CRUD Application"
                          x-on:click="open = ! open"/>
-                </div>
 
                 {{-- Modal --}}
                 <div x-show="open" x-transition x-on:click="open = ! open">

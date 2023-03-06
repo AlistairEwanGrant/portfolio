@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Bio\CurriculumVitaeController;
+use App\Http\Controllers\MailController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,12 +15,36 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//Bio Site
 Route::get('/', function () {
     return view('home/welcome');
 });
 
+Route::get('/under_construction', function () {
+    return view('home/construction');
+});
+
+Route::get('/skills', function () {
+    return view('home/skills');
+})->name('skills');
+
+Route::get('/experience', function () {
+    return view('home/experience');
+})->name('experience');
+
+Route::get('/cv', function () {
+    return view('home/cv');
+})->name('cv');
+
 Route::get('/portfolio', function () {
     return view('home/portfolio');
 });
+
+Route::get('/contact', function () {
+    return view('home/contact');
+})->name('contact');;
+
+Route::get('/curriculum-vitae/download', [CurriculumVitaeController::class, 'index'])->name('curriculumVitae.index');
+Route::put('/mail', [MailController::class, 'store'])->name('mail');
 
 require __DIR__.'/auth.php';
