@@ -43,3 +43,11 @@
     max-height: 70vh;
     overflow-y: auto;
 }
+
+.modal_portfolio {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    z-index: 1000;
+}

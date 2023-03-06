@@ -20,32 +20,53 @@
                 <div
                     class="mb-12 mx-6 cursor-pointer border-solid border-2 border-black rounded-lg mx-auto portfolio-div-sizes"
                     x-data="{ open: false }"
-                    >
+                >
                     <img class="portfolio-sizes"
                          src="{{URL::asset('images/project3.png')}}"
-                         alt=""
+                         alt="Laravel Blog"
                          x-on:click="open = ! open"/>
 
-{{--                    Modal for content project 3--}}
+                    {{-- Modal --}}
                     <div x-show="open" x-transition x-on:click="open = ! open">
                         <x-modal></x-modal>
                     </div>
 
-            </div>
-            <!-- Portfolio Item 1-->
-            <div
-                class="mb-12 mx-6 cursor-pointer border-solid border-2 border-black rounded-lg mx-auto portfolio-div-sizes">
-                <img class="portfolio-sizes" src="{{URL::asset('images/project1.jpeg')}}" alt=""/>
-            </div>
-            <!-- Portfolio Item 2-->
-            <div
-                class="mb-12 mx-6 cursor-pointer border-solid border-2 border-black rounded-lg mx-auto portfolio-div-sizes">
-                <img class="portfolio-sizes" src="{{URL::asset('images/project2.jpg')}}" alt=""/>
+                </div>
+
+                <!-- Portfolio Item 1-->
+                <div
+                    class="mb-12 mx-6 cursor-pointer border-solid border-2 border-black rounded-lg mx-auto portfolio-div-sizes"
+                    x-data="{ open: false }"
+                >
+                    <img class="portfolio-sizes"
+                         src="{{URL::asset('images/project1.jpeg')}}"
+                         alt="Gazzetteer"
+                         x-on:click="open = ! open"/>
+
+                    {{-- Modal --}}
+                    <div x-show="open" x-transition x-on:click="open = ! open">
+                        <x-modal-two></x-modal-two>
+                    </div>
+                </div>
+                <!-- Portfolio Item 2-->
+                <div
+                    class="mb-12 mx-6 cursor-pointer border-solid border-2 border-black rounded-lg mx-auto portfolio-div-sizes"
+                    x-data="{ open: false }"
+                >
+                    <img class="portfolio-sizes"
+                         src="{{URL::asset('images/project2.jpg')}}"
+                         alt="CRUD Application"
+                         x-on:click="open = ! open"/>
+                </div>
+
+                {{-- Modal --}}
+                <div x-show="open" x-transition x-on:click="open = ! open">
+                    <x-modal-three></x-modal-three>
+                </div>
+
             </div>
         </div>
     </div>
-    </div>
-
 
 
     <x-footer></x-footer>
