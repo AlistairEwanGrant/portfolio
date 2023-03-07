@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Exception;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Config;
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 
@@ -35,14 +36,14 @@ class MailController extends Controller
             $mail->isSMTP();                                            //Send using SMTP
             $mail->Host       = 'smtp.ionos.co.uk';                     //Set the SMTP server to send through
             $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-            $mail->Username   = 'alistair.grant@alistair-j-e-grant.co.uk';                     //SMTP username
-            $mail->Password   = 'esWwEzsb3M9tQ52!';          //SMTP password
+            $mail->Username   = Config::get('mail.from.address');                     //SMTP username
+            $mail->Password   = Config::get('mail.from.password');           //SMTP password
             $mail->SMTPSecure = 'TLS/SSL';                              //Enable implicit TLS encryption
             $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
             //Recipients
-            $mail->setFrom('alistair.grant@alistair-j-e-grant.co.uk', $fullName);
-            $mail->addAddress('alistair.grant@alistair-j-e-grant.co.uk');     //Add a recipient
+            $mail->setFrom(Config::get('mail.from.address', $fullName));
+            $mail->addAddress(Config::get('mail.from.address'));    //Add a recipient
 
             //Content
             $mail->isHTML(true);                                  //Set email format to HTML

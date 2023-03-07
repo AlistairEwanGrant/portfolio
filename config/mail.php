@@ -99,6 +99,7 @@ return [
 
     'from' => [
         'address' => env('MY_EMAIL'),
+        'password' => env('MY_EMAIL_PASSWORD'),
         'name' => env('MAIL_FROM_NAME', 'Me'),
     ],
 
