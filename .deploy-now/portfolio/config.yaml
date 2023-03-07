@@ -19,6 +19,8 @@ deploy:
       - chmod -R o+w storage bootstrap/cache
       - php artisan optimize:clear
       - php artisan migrate --force -n
+      - php artisan config:clear
+      - php artisan route:clear
       - php artisan storage:link
       - php artisan optimize
       - php artisan up
@@ -42,6 +44,8 @@ deploy:
       - find $(pwd) -type d -not -name "logs" -exec chmod 775 {} \;
       - chmod -R o+w storage bootstrap/cache
       - php artisan optimize:clear
+      - php artisan view:clear
+      - php artisan config:clear
       - php artisan migrate --force -n
       - php artisan storage:link
       - php artisan optimize
