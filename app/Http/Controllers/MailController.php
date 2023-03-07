@@ -42,7 +42,7 @@ class MailController extends Controller
 
             //Recipients
             $mail->setFrom('alistair.grant@alistair-j-e-grant.co.uk', $fullName);
-            $mail->addAddress(env('MY_EMAIL'));     //Add a recipient
+            $mail->addAddress('alistair.grant@alistair-j-e-grant.co.uk');     //Add a recipient
 
             //Content
             $mail->isHTML(true);                                  //Set email format to HTML
