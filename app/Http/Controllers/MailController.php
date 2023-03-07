@@ -35,8 +35,8 @@ class MailController extends Controller
             $mail->isSMTP();                                            //Send using SMTP
             $mail->Host       = 'smtp.ionos.co.uk';                     //Set the SMTP server to send through
             $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-            $mail->Username   = env('MY_EMAIL');                     //SMTP username
-            $mail->Password   = env('MY_EMAIL_PASSWORD');          //SMTP password
+            $mail->Username   = 'alistair.grant@alistair-j-e-grant.co.uk';                     //SMTP username
+            $mail->Password   = 'esWwEzsb3M9tQ52!';          //SMTP password
             $mail->SMTPSecure = 'TLS/SSL';                              //Enable implicit TLS encryption
             $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
@@ -52,7 +52,7 @@ class MailController extends Controller
             $mail->send();
             return redirect('contact')->with('status', 'Mail Sent');
         } catch (Exception $e) {
-            return redirect('contact')->with('status', $mail->ErrorInfo . env('MY_EMAIL'));
+            return redirect('contact')->with('status', $mail->ErrorInfo);
         }
 
     }
