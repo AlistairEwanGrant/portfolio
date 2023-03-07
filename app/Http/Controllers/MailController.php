@@ -41,7 +41,7 @@ class MailController extends Controller
             $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
             //Recipients
-            $mail->setFrom($email, $fullName);
+            $mail->setFrom(env('MY_EMAIL'), $fullName);
             $mail->addAddress(env('MY_EMAIL'));     //Add a recipient
 
             //Content
