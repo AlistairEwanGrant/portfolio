@@ -2,7 +2,7 @@
     class="block fixed top-0 left-0 w-max h-max overflow-y-auto overflow-x-hidden ease-in-out delay-150 modal_portfolio">
     <div class="transform-none max-w-xl my-7 mx-auto relative w-auto pointer-events-none">
         <div
-            class="relative flex flex-col max-w-xl pointer-events-auto bg-white bg-clip-padding border-2 border-grey-600 rounded-xl modal-fitting">
+            class="relative flex flex-col max-w-xl pointer-events-auto bg-cyan-200 bg-clip-padding border-2 border-grey-600 rounded-xl modal-fitting">
             <div class="flex shrink-0 items-center justify-between p-4 rounded-t-xl text-center"></div>
             <div class="text-center relative flex-auto p-4 pb-12">
                 <div class="max-w-lg w-full px-3 mx-auto">
