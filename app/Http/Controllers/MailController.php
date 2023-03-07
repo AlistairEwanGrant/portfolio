@@ -36,8 +36,8 @@ class MailController extends Controller
             $mail->Host       = 'smtp.ionos.co.uk';                     //Set the SMTP server to send through
             $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
             $mail->Username   = env('MY_EMAIL');                     //SMTP username
-            $mail->Password   = env('MY_EMAIL_PASSWORD');                               //SMTP password
-            $mail->SMTPSecure = 'TLS/SSL';            //Enable implicit TLS encryption
+            $mail->Password   = env('MY_EMAIL_PASSWORD');          //SMTP password
+            $mail->SMTPSecure = 'TLS/SSL';                              //Enable implicit TLS encryption
             $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
             //Recipients

@@ -44,6 +44,7 @@ deploy:
       - find $(pwd) -type d -not -name "logs" -exec chmod 775 {} \;
       - chmod -R o+w storage bootstrap/cache
       - php artisan optimize:clear
+      - php artisan cache:clear
       - php artisan view:clear
       - php artisan config:clear
       - php artisan migrate --force -n
