@@ -26,7 +26,7 @@
                             <p class="mb-3">
                                 Company Directory project is a single page application that allows the user
                                 to manipulate the database of Personnel using a simple interface which connects front-end
-                                components to server-side endpoints to achieve the results (CRUD).
+                                components to server-side API endpoints to achieve the results (CRUD).
                             </p>
                             <div class="flex justify-center space-x-2">
                                 <a target="_blank" href="{{route("company")}}">
