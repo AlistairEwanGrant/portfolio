@@ -47,6 +47,7 @@ deploy:
       - php artisan view:clear
       - php artisan config:clear
       - php artisan route:clear
+      - php artisan optimize
       - php artisan migrate --force -n
       - php artisan storage:link
       - php artisan up
