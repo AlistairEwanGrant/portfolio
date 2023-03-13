@@ -19,7 +19,7 @@ $(document).ready(function () {
 
     function getAllNames() {
         $.ajax({
-            url: "api/company-directory/get-all",
+            url: "company-directory/get-all",
             type: 'GET',
             dataType: 'json',
             success: function (result) {
@@ -55,7 +55,7 @@ $(document).ready(function () {
 // updating departmet dropdown main screen
     function getAllDepartmentNames() {
         $.ajax({
-            url: "api/company-directory/get-all-departments",
+            url: "company-directory/get-all-departments",
             type: 'GET',
             dataType: 'json',
             success: function (result) {
@@ -84,7 +84,7 @@ $(document).ready(function () {
 // updating location dropdown main screen
     function updateDropdowns() {
         $.ajax({
-            url: "api/company-directory/get-all-locations",
+            url: "company-directory/get-all-locations",
             type: 'GET',
             dataType: 'json',
             success: function (result) {
@@ -114,7 +114,7 @@ $(document).ready(function () {
         let personnelID = $(this).attr('id');
 
         $.ajax({
-            url: "api/company-directory/personnel/{id}",
+            url: "company-directory/personnel/{id}",
             type: 'GET',
             dataType: 'json',
             data: {
@@ -136,7 +136,7 @@ $(document).ready(function () {
                 let departmentID = result.departmentID;
 
                 $.ajax({
-                    url: "api/company-directory/get-all-departments",
+                    url: "company-directory/get-all-departments",
                     type: 'GET',
                     dataType: 'json',
                     success: function (result) {
@@ -229,7 +229,7 @@ $(document).ready(function () {
 
     function filterNames() {
         $.ajax({
-            url: "api/company-directory/get-all",
+            url: "company-directory/get-all",
             type: 'GET',
             dataType: 'json',
             success: function (result) {
@@ -446,7 +446,7 @@ $(document).ready(function () {
         let departmentForEdit = $('#dropdownDepartmentsEdit option:selected').attr('id')
 
         $.ajax({
-            url: "api/company-directory/personnel/{personnelID}/edit",
+            url: "company-directory/personnel/{personnelID}/edit",
             type: 'GET',
             dataType: 'json',
             data: {
@@ -491,7 +491,7 @@ $(document).ready(function () {
         let lastNameForEdit = $('#lastNameEdit').val()
 
         $.ajax({
-            url: "api/company-directory/personnel/{personnelID}",
+            url: "company-directory/personnel/{personnelID}",
             type: 'POST',
             dataType: 'json',
             data: {
@@ -575,7 +575,7 @@ $(document).ready(function () {
         }
 
         $.ajax({
-            url: "api/company-directory/personnel",
+            url: "company-directory/personnel",
             type: 'POST',
             dataType: 'json',
             data: {
@@ -725,7 +725,7 @@ $(document).ready(function () {
         }
 
         $.ajax({
-            url: "api/company-directory/department",
+            url: "company-directory/department",
             type: 'POST',
             dataType: 'json',
             data: {
@@ -775,7 +775,7 @@ $(document).ready(function () {
         }
 
         $.ajax({
-            url: "api/company-directory/location",
+            url: "company-directory/location",
             type: 'POST',
             dataType: 'json',
             data: {
@@ -842,7 +842,7 @@ $(document).ready(function () {
         }
 
         $.ajax({
-            url: "api/company-directory/department/{locationID}/edit",
+            url: "company-directory/department/{locationID}/edit",
             type: 'GET',
             dataType: 'json',
             data: {
@@ -884,7 +884,7 @@ $(document).ready(function () {
         let locationName = $('#editLocationText').val()
 
         $.ajax({
-            url: "api/company-directory/location/{locationID}/edit",
+            url: "company-directory/location/{locationID}/edit",
             type: 'GET',
             dataType: 'json',
             data: {
@@ -921,7 +921,7 @@ $(document).ready(function () {
         let department = $('#editDepartment :selected').text();
 
         $.ajax({
-            url: "api/company-directory/department/{departmentID}",
+            url: "company-directory/department/{departmentID}",
             type: 'GET',
             dataType: 'json',
             data: {
@@ -942,7 +942,7 @@ $(document).ready(function () {
                 } else {
 
                     $.ajax({
-                        url: "api/company-directory/department/{departmentID}",
+                        url: "company-directory/department/{departmentID}",
                         type: 'POST',
                         dataType: 'json',
                         data: {
@@ -995,7 +995,7 @@ $(document).ready(function () {
         }
 
         $.ajax({
-            url: "api/company-directory/location/{locationID}",
+            url: "company-directory/location/{locationID}",
             type: 'POST',
             dataType: 'json',
             data: {
