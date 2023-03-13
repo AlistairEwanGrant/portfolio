@@ -53,6 +53,8 @@ Route::get('/contact', function () {
 Route::get('/curriculum-vitae/download', [CurriculumVitaeController::class, 'index'])->name('curriculumVitae.index');
 Route::put('/mail', [MailController::class, 'store'])->name('mail');
 
-
+Route::get('/company-directory', function () {
+    return view('company/company');
+})->name('company');
 
 require __DIR__ . '/auth.php';
