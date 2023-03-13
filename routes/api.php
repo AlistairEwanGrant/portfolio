@@ -22,7 +22,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 //company
-Route::get('/company-directory', [CompanyController::class, 'show']);
+Route::get('/company-directory', [CompanyController::class, 'show'])->name('api.company');
 Route::get('/company-directory/get-all', [GetAllController::class, 'index']);
 Route::get('/company-directory/get-all-departments', [GetAllDepartmentsController::class, 'index']);
 Route::get('/company-directory/get-all-locations', [GetAllLocationsController::class, 'index']);
