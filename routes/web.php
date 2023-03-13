@@ -1,6 +1,12 @@
 <?php
 
 use App\Http\Controllers\Bio\CurriculumVitaeController;
+use App\Http\Controllers\Company\DepartmentController;
+use App\Http\Controllers\Company\GetAllController;
+use App\Http\Controllers\Company\GetAllDepartmentsController;
+use App\Http\Controllers\Company\GetAllLocationsController;
+use App\Http\Controllers\Company\LocationController;
+use App\Http\Controllers\Company\PersonnelController;
 use App\Http\Controllers\MailController;
 use Illuminate\Support\Facades\Route;
 
@@ -47,4 +53,11 @@ Route::get('/contact', function () {
 Route::get('/curriculum-vitae/download', [CurriculumVitaeController::class, 'index'])->name('curriculumVitae.index');
 Route::put('/mail', [MailController::class, 'store'])->name('mail');
 
-require __DIR__.'/auth.php';
+
+//company
+Route::get('/company-directory', function () {
+    return view('company/company');
+})->name('company');
+
+
+require __DIR__ . '/auth.php';

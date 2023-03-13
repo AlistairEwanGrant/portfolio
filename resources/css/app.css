@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/*bio page*/
 .title-name-front-page {
     font-family: Montserrat, sans-serif;
     font-size: 4rem;
@@ -23,7 +24,7 @@
 
 }
 
-.front-page-strip{
+.front-page-strip {
     width: 100%;
     max-width: 7rem;
     height: 0.25rem;
@@ -50,4 +51,177 @@
     width: 100%;
     pointer-events: auto;
     z-index: 1000;
+}
+
+/*Company*/
+.centered-page-content {
+    align-items: center;
+    text-align: center;
+}
+
+#resultsArea {
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+form {
+    display: inline-block;
+}
+
+.col-lg-8 {
+    width: 100%;
+    min-height: 100%;
+    background-color: darkgray;
+}
+
+.white {
+    color: white;
+    font-weight: bold;
+}
+
+.biggerText {
+    font-size: larger;
+}
+
+.form-control {
+    border-style: solid;
+    border-color: blue;
+    min-height: 38px;
+}
+
+.container-fluid {
+    max-width: 80%;
+    position: relative;
+    top: 10px;
+    /*border: black solid 1px;*/
+    border-radius: 15px;
+}
+
+#resize {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#editButton {
+    margin-left: 10px;
+    display: none;
+}
+
+#dropdownDepartments, #dropdownLocation, #searchBar, #myInput {
+    padding: 5px 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    max-height: 35px;
+}
+
+#addNew, #dropdownDepartments, #dropdownLocation, #searchBar, #myInput {
+    margin-top: 5px;
+}
+
+#myInput {
+    max-width: 423px;
+}
+
+#addNew {
+    padding-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    max-height: 35px;
+}
+
+#dropdownLocation {
+    padding-right: 10px;
+}
+
+#large {
+    font-size: xx-large;
+}
+
+#trash {
+    size-adjust: 120%;
+    color: whitesmoke
+}
+
+#trashButtonPersonnel, #trashButtonDepartment, #trashButtonLocation {
+    max-height: 35px;
+}
+
+.personnelID {
+    display: none;
+}
+
+.navbar-mine {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #e9ecef !important;
+    opacity: 1 !important;
+    z-index: 2;
+}
+
+.bold-text-name {
+    font-weight: bold;
+}
+
+.th-change {
+    background-color: #6c757d !important;
+    border-radius: 5px;
+    top: 100px;
+    z-index: 2;
+    cursor: auto;
+}
+
+.tr-mine{
+    cursor: pointer;
+}
+
+.modal-header{
+    flex-direction: column;
+}
+
+@media only screen and  (max-width: 992px){
+    .hiding {
+        display:none;
+    }
+    .container-fluid {
+        max-width: 95%;}
+
+    #minWidth{
+        min-width: 90px;
+    }
+}
+
+@media only screen and  (max-width: 452px){
+    #myInput {
+        max-width: 347px;
+    }
+    #dropdownDepartments, #dropdownLocation{
+        max-width: 160px;
+        padding-right: 0;
+    }
+
+}
+
+@media only screen and  (max-width: 383px){
+    #myInput {
+        max-width: 300px;
+    }
+    #dropdownDepartments, #dropdownLocation{
+        max-width: 160px;
+        margin: 0;
+    }
+}
+
+#dropdownTableAdd, #dropdownTableEdit{
+    width: 224px !important;
+    font-size: large;
+    font-weight: bolder;
+    border: 4px solid blue;
+}
+
+#newDepartmentLocation{
+    min-width: 200px !important;
 }
