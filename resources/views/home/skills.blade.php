@@ -18,7 +18,8 @@
             <div class="grid sm:columns-1 mx-2.5 md:grid-cols-2 gap-4 ">
                 <div class="font-light text-lg ml-auto"><p>Hi, I'm Alistair! I began my career in the banking industry and
                         then moved into a career within the Probation Service, wherein I progressed from administration to managing
-                        a large team of administrators. All of these roles involved working in a high-pressured environment and
+                        a large team of administra
+                        tors. All of these roles involved working in a high-pressured environment and
                         therefore required flexible problem-solving skills. My time in the Probation Service developed my strong
                         communication skills, due to regularly engaging with a wide range of internal and external stakeholders.
                         The two management roles I held taught me how to effectively manage, train and motivate people.
