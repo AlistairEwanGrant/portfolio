@@ -21,14 +21,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//company
-Route::get('/company-directory', [CompanyController::class, 'show'])->name('api.company');
-Route::get('/company-directory/get-all', [GetAllController::class, 'index']);
-Route::get('/company-directory/get-all-departments', [GetAllDepartmentsController::class, 'index']);
-Route::get('/company-directory/get-all-locations', [GetAllLocationsController::class, 'index']);
-Route::resource('/company-directory/location', LocationController::class);
-Route::resource('/company-directory/department', DepartmentController::class);
-Route::resource('/company-directory/personnel', PersonnelController::class);
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
