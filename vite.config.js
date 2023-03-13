@@ -7,7 +7,6 @@ export default defineConfig({
             input: [
                 'resources/css/app.css',
                 'resources/css/bootstrapFive.css',
-                'resources/js/jquery.min.js',
                 'resources/js/app.js',
                 'resources/js/bootstrap.js',
                 'resources/js/company.js',
