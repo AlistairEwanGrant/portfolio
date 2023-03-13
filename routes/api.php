@@ -20,6 +20,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//company
+Route::get('/company-directory', function () {
+    return view('company/company');
+})->name('company');
+
 Route::get('/company-directory/get-all', [GetAllController::class, 'index']);
 Route::get('/company-directory/get-all-departments', [GetAllDepartmentsController::class, 'index']);
 Route::get('/company-directory/get-all-locations', [GetAllLocationsController::class, 'index']);
