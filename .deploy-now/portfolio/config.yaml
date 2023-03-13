@@ -17,8 +17,6 @@ deploy:
       - find $(pwd) -type f -not -path "$(pwd)/logs/*" -exec chmod 664 {} \;
       - find $(pwd) -type d -not -name "logs" -exec chmod 775 {} \;
       - chmod -R o+w storage bootstrap/cache
-      - php artisan optimize:clear
-      - php artisan migrate --force -n
       - php artisan config:clear
       - php artisan route:clear
       - php artisan storage:link
@@ -33,7 +31,6 @@ deploy:
       - DOCKER_ENV
       - docker_tag
       - output.log
-      - storage
     # commands that are executed at the real webspace NOT at build servers BEFORE copying new files
     pre-deployment-remote-commands:
       - php artisan down
@@ -42,15 +39,10 @@ deploy:
       - find $(pwd) -type f -not -path "$(pwd)/logs/*" -exec chmod 664 {} \;
       - find $(pwd) -type d -not -name "logs" -exec chmod 775 {} \;
       - chmod -R o+w storage bootstrap/cache
-      - php artisan optimize:clear
-      - php artisan cache:clear
+      - php artisan storage:link
       - php artisan view:clear
       - php artisan config:clear
-      - php artisan route:clear
-      - php artisan optimize
-      - php artisan config:cache
-      - php artisan migrate --force -n
-      - php artisan storage:link
+      - php artisan migrate --force
       - php artisan up
 
 # uncomment the following lines to configure cron jobs
