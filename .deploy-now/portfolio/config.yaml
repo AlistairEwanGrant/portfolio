@@ -22,7 +22,6 @@ deploy:
       - php artisan config:clear
       - php artisan route:clear
       - php artisan storage:link
-      - php artisan optimize
       - php artisan up
 
   # configuration part, which is taken at ALL FURTHER deployments of this branch
@@ -48,10 +47,8 @@ deploy:
       - php artisan view:clear
       - php artisan config:clear
       - php artisan route:clear
-      - php artisan config:cache
       - php artisan migrate --force -n
       - php artisan storage:link
-      - php artisan optimize
       - php artisan up
 
 # uncomment the following lines to configure cron jobs
