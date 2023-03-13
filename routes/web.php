@@ -56,12 +56,17 @@ Route::put('/mail', [MailController::class, 'store'])->name('mail');
 
 
 //company
-Route::get('/company-directory', [CompanyController::class, 'show'])->name('company');
 Route::get('/company-directory/get-all', [GetAllController::class, 'index']);
 Route::get('/company-directory/get-all-departments', [GetAllDepartmentsController::class, 'index']);
 Route::get('/company-directory/get-all-locations', [GetAllLocationsController::class, 'index']);
 Route::resource('/company-directory/location', LocationController::class);
 Route::resource('/company-directory/department', DepartmentController::class);
 Route::resource('/company-directory/personnel', PersonnelController::class);
+
+Route::get('/company-directory', function () {
+    return view('company.company-home');
+})->name('company');;
+
+
 
 require __DIR__ . '/auth.php';
