@@ -1,30 +1,19 @@
 <x-app-layout>
 
-    @vite([
-    'resources/js/jquery-3.6.0.min.js',
-    'resources/css/gaz-bootstrap.min.css',
-    'resources/css/easy-button.css',
-    'resources/css/leaflet.css',
-    'resources/css/leaflet-markers.min.css',
-    'resources/js/gaz-bootstrap.bundle.js',
-    'resources/js/leaflet.js',
-    'resources/js/gazetteer-easy-button.js',
-    'resources/js/leaflet-markers.min.js',
-    'resources/js/leaflet-src.esm.js',
-    'resources/js/leaflet-src.js',
-    'resources/js/gazetteer.js',
-])
+    @vite('resources/css/gaz.css')
+    @vite('resources/css/leaflet.css')
+    @vite('resources/css/gaz-bootstrap.min.css')
+    @vite('resources/css/easy-button.css')
+    @vite('resources/css/leaflet-markers.min.css')
+
+
+    <!-- dropdown menu -->
+    <select name="CountryNameDrop_down" id="CountryNameDrop_down">
+        <option value="Select Country" id="selector" placeholder="Select Country">Select Country</option>
+    </select>
 
     <!-- Map div -->
     <div id="map"></div>
-
-    <!-- Loading img - will be removed onced loaded -->
-    <div id="overlayer"></div>
-    <div class="preloader">
-        <div class="loader">
-        </div>
-        <p id="loading"> Loading...</p>
-    </div>
 
     <!-- Modal -->
     <div class="modal fade" id="newModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
@@ -140,5 +129,8 @@
             </div>
         </div>
     </div>
-
+    @vite('resources/js/leaflet.js')
+    @vite('resources/js/easy-button.js')
+    @vite('resources/js/leaflet-markers.min.js')
+    @vite('resources/js/gazetteer.js')
 </x-app-layout>

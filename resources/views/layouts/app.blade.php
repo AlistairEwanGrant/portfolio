@@ -10,8 +10,10 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
     <link rel="icon" type="image/jpg" href="favicon.png"/>
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
+{{--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>--}}
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet"/>
 
     <!-- Scripts -->

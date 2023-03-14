@@ -1,0 +1,208 @@
+#map {
+    height: 600px;
+    z-index: 0;
+}
+
+.modal-backdrop {
+    z-index: 1;
+
+}
+
+.modal-header {
+    display: inline;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    border-bottom: 0;
+
+}
+
+#titleTxt {
+    color: #244b74;
+    font-size: x-large;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+}
+
+.headdingTxt {
+    font-size: x-large;
+
+}
+
+#CountryNameDrop_down {
+    position: absolute;
+    z-index: 999;
+    left: 45%;
+    right: 50%;
+    top: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 740px;
+    background-color: #fff;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 6px/15px;
+
+}
+
+.center {
+    text-align: center;
+}
+
+table a:link {
+    color: #244b74;
+}
+
+table a:visited {
+    color: #0e243a;
+}
+
+table a:hover {
+    color: rgb(29, 28, 83);
+}
+
+table a:active {
+    color: yellow;
+}
+
+.leaflet-popup-content-wrapper {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    color: rgb(5, 58, 59);
+
+}
+
+.fa-hotel, .fa-sign, .fa-mountain, .fa-money-bill {
+    color: #244b74;
+}
+
+.fa-user, .fa-poll, .fa-minus-square {
+    color: #244b74;
+}
+
+.white {
+    color: #244b74;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.blue {
+    color: #244b74;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.modal-content {
+    background-color: #b8daff;
+}
+
+.table td {
+    border-top: none;
+}
+
+.close {
+    overflow: hidden;
+    position: relative;
+    right: 17px;
+    bottom: 17px;
+    border: none;
+    padding: 0;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background: transparent;
+    color: #1da1f2;
+    font: inherit;
+    text-indent: 100%;
+    cursor: pointer;
+}
+
+.close:focus {
+    outline: solid 0 transparent;
+    box-shadow: 0 0 0 2px #8ed0f9
+}
+
+.close:hover {
+    background: rgba(29, 161, 142, .1)
+}
+
+.close:before, .close:after {
+    position: absolute;
+    top: 15%;
+    left: calc(50% - .0625em);
+    width: .125em;
+    height: 70%;
+    border-radius: .125em;
+    transform: rotate(45deg);
+    background: currentcolor;
+    content: ''
+}
+
+.close:after {
+    transform: rotate(-45deg);
+}
+
+
+.center {
+    align-items: center;
+}
+
+#dayAfterIcon, #tomorrowIcon, #todayIcon {
+    background-color: #FFF;
+    border: solid 3px #244b74;
+    width: 150px;
+}
+
+.width {
+    width: 50px;
+}
+
+.wikiImg {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.newsImg {
+    max-width: 100%;
+    max-height: 100px;
+    border-radius: 10px;
+}
+
+.smallerTxt {
+    font-size: small;
+}
+
+.leaflet-popup-content {
+    text-align: center;
+    color: #FFF;
+    font-size: smaller !important;
+    background-color: #244b74;
+    border-radius: 4px;
+}
+
+
+.leaflet-popup-content-wrapper {
+    background-color: #073566;
+    border-radius: 35px;
+}
+
+
+.leaflet-popup-close-button {
+    right: 25px !important;
+    top: 15px !important;
+}
+
+.example::-webkit-scrollbar {
+    display: none;
+}
+
+.leaflet-popup-tip-container :first-child {
+    background-color: #073566 !important;
+}
+
+.modal-content {
+    max-height: 70vh;
+    overflow-y: auto;
+}
