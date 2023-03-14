@@ -19,7 +19,7 @@
                             </div>
                             <!-- Portfolio Modal - Image-->
                             <img class="border-solid border-2 border-black rounded-t-lg rounded-b-lg w-full mb-12"
-                                 src="http://localhost:8080/public/images/project1.jpeg"
+                                 src="{{URL::asset('images/project2.jpg')}}"
                                  alt="..."/>
                             <!-- Portfolio Modal - Text-->
                             <p class="mb-3">

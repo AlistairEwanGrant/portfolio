@@ -20,8 +20,8 @@
                             </div>
                             <!-- Portfolio Modal - Image-->
                             <img class="border-solid border-2 border-black rounded-t-lg rounded-b-lg w-full mb-12"
-                                 src="http://localhost:8080/public/images/project2.jpg"
-                                 alt="..."/>
+                                 src="{{URL::asset('images/project2.jpg')}}"
+                                 alt="image of project 2"/>
                             <!-- Portfolio Modal - Text-->
                             <p class="mb-3">
                                 Company Directory project is a single page application that allows the user
