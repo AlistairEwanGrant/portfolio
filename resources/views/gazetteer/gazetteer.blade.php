@@ -132,6 +132,6 @@
     @vite('resources/js/gaz-bootstrap.bundle.js')
     @vite('resources/js/leaflet.js')
     @vite('resources/js/easy-button.js')
-    @vite('resources/js/leaflet-markers.min.js')
+    @vite('resources/js/leaflet.extra-markers.js')
     @vite('resources/js/gazetteer.js')
 </x-app-layout>
