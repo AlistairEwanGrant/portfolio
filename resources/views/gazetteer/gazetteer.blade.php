@@ -1,10 +1,9 @@
 <x-app-layout>
-
     @vite('resources/css/gaz.css')
     @vite('resources/css/leaflet.css')
-    @vite('resources/css/gaz-bootstrap.min.css')
     @vite('resources/css/easy-button.css')
     @vite('resources/css/leaflet-markers.min.css')
+    @vite('resources/css/gaz-bootstrap.min.css')
 
 
     <!-- dropdown menu -->
@@ -129,6 +128,8 @@
             </div>
         </div>
     </div>
+
+    @vite('resources/js/gaz-bootstrap.bundle.js')
     @vite('resources/js/leaflet.js')
     @vite('resources/js/easy-button.js')
     @vite('resources/js/leaflet-markers.min.js')
