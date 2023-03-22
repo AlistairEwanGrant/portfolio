@@ -14,7 +14,7 @@ export default defineConfig({
                 'resources/js/app.js',
                 'resources/js/bootstrap.js',
                 'resources/js/jquery-3.6.0.min.js',
-                'resources/css/easy-button.js',
+                'resources/js/easy-button.js',
                 'resources/js/company.js',
                 'resources/js/leaflet.js',
                 'resources/js/leaflet.extra-markers.min.js',
