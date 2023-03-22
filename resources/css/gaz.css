@@ -156,6 +156,12 @@ table a:active {
     background-color: #FFF;
     border: solid 3px #244b74;
     width: 150px;
+
+}
+
+#dayAfterIcon > img, #tomorrowIcon > img, #todayIcon >img {
+    margin:0 auto;
+
 }
 
 .width {
@@ -165,12 +171,14 @@ table a:active {
 .wikiImg {
     max-width: 100%;
     border-radius: 10px;
+    margin:0 auto;
 }
 
 .newsImg {
     max-width: 100%;
     max-height: 100px;
     border-radius: 10px;
+    margin:0 auto;
 }
 
 .smallerTxt {
@@ -208,5 +216,9 @@ table a:active {
 .modal-content {
     max-height: 70vh;
     overflow-y: auto;
+}
+
+svg {
+    display: inline;
 }
 
