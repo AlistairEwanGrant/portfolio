@@ -5,6 +5,7 @@ export default defineConfig({
     plugins: [
         laravel({
             input: [
+                'resources/js/jquery-3.6.0.min.js',
                 'resources/css/app.css',
                 'resources/css/bootstrapFive.css',
                 'resources/css/easy-button.css',
@@ -13,7 +14,6 @@ export default defineConfig({
                 'resources/css/leaflet-markers.min.css',
                 'resources/js/app.js',
                 'resources/js/bootstrap.js',
-                'resources/js/jquery-3.6.0.min.js',
                 'resources/js/easy-button.js',
                 'resources/js/company.js',
                 'resources/js/leaflet.js',
